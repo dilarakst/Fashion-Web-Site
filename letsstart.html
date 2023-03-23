@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title> Ranfit </title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <!--styles-->
+   <link rel="stylesheet" href="style.css">
+
+   <script type="text/javascript">
+
+</script> 
+<script> 
+  function goTo() {
+    var secilen1 = document.getElementById("secme1").value
+    var secilen2 = document.getElementById("secme2").value
+
+    if(secilen1 === "a" && secilen2 === "1"){
+      window.location.href = "a1rf.html"
+    }
+     else if(secilen1 === "a" && secilen2 === "2"){
+      window.location.href = "a2rf.html" 
+       }
+      else if(secilen1 === "b" && secilen2 === "1"){
+        window.location.href = "b1rf.html"
+       }
+       else if(secilen1 === "b" && secilen2 === "2"){
+        window.location.href = "b2rf.html"
+            }
+            else if(secilen1 === "c" && secilen2 === "1"){
+        window.location.href = "c1rf.html"
+            }
+            else if(secilen1 === "c" && secilen2 === "2"){
+        window.location.href = "c2rf.html"
+            }
+  
+  }
+  </script>
+
+</head>
+
+<body>
+    <center>
+    <h2>RANFIT</h2>
+    </center>
+    
+   <div class="menu">
+    <header>
+       
+        <ul class="menu">
+            <li><a href="fpagehomep.html" data-hover="Anasayfa">Anasayfa</a></li>
+            <li><a href="aboutusranfit.html" data-hover="Hakkımızda">Hakkımızda</a></li>
+            <li><a href="firstpagegiris.html" data-hover="Kayıt Ol">Kayıt Ol</a></li>
+            <li ><a href="iletisim.html" data-hover="İletişim ">İletişim</a></li>
+        </ul>
+      
+
+
+          <select class="secme1" id="secme1">
+            <option value="seciniz">Hava Nasıl?</option>
+            <option value="a">Güneşli</option>
+            <option value="b">Yağmurlu/Rüzgarlı</option>
+            <option value="c">Karlı</option>
+      
+          </select> 
+          <select class="secme2"  id="secme2">
+            <option value="seciniz">Günlük Mü Resmi Mi?</option>
+            <option value="1">Günlük</option>
+            <option value="2">Resmi</option>
+          </select>
+
+          <img class="backg2" src="backg2 .jpeg" alt="backg2" width="100%">
+         
+   
+        <button class="gonderbtn" id="gonderbtn" onclick="goTo()">Kombin Getir!</button>
+
+   </body>
+      </html>

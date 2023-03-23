@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title> Ranfit </title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <!--styles-->
+   <link rel="stylesheet" href="style.css">
+
+  
+
+
+</head>
+
+<body>
+    <center>
+    <h2>RANFIT</h2>
+    </center>
+    
+   <div class="menu">
+    <header>
+       
+        <ul class="menu">
+            <li><a href="fpagehomep.html" data-hover="Anasayfa">Anasayfa</a></li>
+            <li><a href="aboutusranfit.html" data-hover="Hakkımızda">Hakkımızda</a></li>
+            <li><a href="firstpagegiris.html" data-hover="Kayıt Ol">Kayıt Ol</a></li>
+            <li ><a href="iletisim.html" data-hover="İletişim ">İletişim</a></li>
+          </ul>
+      
+
+         <div class="random-img-container">
+          <img src="" id="random_image"/>
+         </div>
+
+         <button class="try" onclick="window.location.href = 'b2rf.html';">Aynı konseptte farklı kombin getir.
+          <button>
+            <button class="cback" onclick="window.location.href = 'letsstart.html';">Yeniden seç.
+              <button>
+   </body>
+      </html>
+
+      <script>
+  function display_random_image(){
+  
+    var theImages = [{
+       src: "rain1.jpeg",
+       width: "300",
+       height: "300",
+       class: "rain1-img"
+      }, {
+        src: "rain2.jpeg",
+        width: "320",
+        height: "195",
+        class: "rain2-img"
+      }, {
+        src: "rain3.jpeg",
+        width: "720",
+        height: "420",
+        class: "rain3-img"
+   },{
+        src: "rain4.jpeg",
+        width: "720",
+        height: "420",
+        class: "rain4-img"
+   }
+  
+  ];
+   
+  
+  const randInt = Math.floor(Math.random() * (theImages.length - 0) + 0)
+  return theImages[randInt]
+  }
+
+  let random_img = display_random_image();
+  let current_element  =document.getElementById('random_image')
+  current_element.src = random_img.src;
+  current_element.classList.add(random_img.class);s
+
+
+</script>
